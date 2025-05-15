@@ -1,14 +1,20 @@
 /*
-  LeetCode 181 ‒ Employees Earning More Than Their Managers
-  Difficulty: Easy        Accepted : 2025-05-13
-  URL: https://leetcode.com/problems/employees-earning-more-than-their-managers/
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
+| salary      | int     |
+| managerId   | int     |
++-------------+---------+
+id is the primary key (column with unique values) for this table.
+Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.
 
-    Schema:
-    Employee(id INT, name VARCHAR, salary INT, managerId INT)
+Write a solution to find the employees who earn more than their managers.
 
-    Notes:
-  • Self-join Employee as (e) and (m) on managerId = m.id
-  • Join on employee's managerId equal to manager's id
+  Notes:
+  - Self-join Employee as (e) and (m) on managerId = m.id
+  - Join on employee's managerId equal to manager's id
 */
 
 SELECT
